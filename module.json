@@ -1,0 +1,11 @@
+{
+    "author": "SoliaRdi",
+    "description": "sell your angler tokens",
+    "disableAutoUpdate": false,
+    "name": "SellAnglerTokens",
+    "options": {
+        "niceName": "SellAnglerTokens"
+    },
+    "supportUrl": "https://github.com/SoliaRdi/sell-angler-tokens",
+    "servers": ["https://raw.githubusercontent.com/SoliaRdi/sell-angler-tokens/master/"]
+}
