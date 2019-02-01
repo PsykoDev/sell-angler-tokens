@@ -85,7 +85,7 @@ module.exports = function SellAnglerTokens(mod) {
 					enabled=false;
 			}
 	});
-	mod.hook('S_SPAWN_NPC', mod.majorPatchVersion >= 79 ? 11 : 10, event => {
+	mod.hook('S_SPAWN_NPC',  11, event => {
 		if (event.templateId == 9903) {
 			s = event;
 		}
@@ -93,14 +93,15 @@ module.exports = function SellAnglerTokens(mod) {
 			t = event;
 		}
 	});
-	mod.hook('S_INVEN', 16, event => {
+	mod.hook('S_INVEN', 17, event => {
 		if (event.items.length == 0) return;
 		event.items.forEach(function (obj) {
 			if (obj.id == 204200) {
 				scrolls = obj;
 			}
 		});
-		tokensAmount=0;
+		if(event.first)
+			tokensAmount=0;
 		event.items.forEach(function (obj) {
 			if (obj.id == 204051) {
 				tokensAmount += obj.amount;

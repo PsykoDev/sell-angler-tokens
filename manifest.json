@@ -1,6 +1,6 @@
 {
     "files": {
-        "index.js": "bb326d938a6fb79d7a46686f0d0910f465a910b62a714546bcd004fb50b7fe65",
+        "index.js": "e90285096bd5e545d3fc3fb6feec4788981430632995725a6c145f784dc8323a",
         "module.json": "75330d50b602ad6f8e711abca64960be25d326767fda0127a6dd2e7d6027fb2e"
     },
     "defs": {
@@ -14,10 +14,10 @@
         "C_STORE_SELL_ADD_BASKET": 1,
         "S_CANCEL_CONTRACT": 1,
         "S_DIALOG": 2,
-        "S_INVEN": 16,
+        "S_INVEN": 17,
         "S_MEDAL_STORE_BASKET": 1,
         "S_REQUEST_CONTRACT": 1,
-        "S_SPAWN_NPC": [10,11],
+        "S_SPAWN_NPC": 11,
         "S_STORE_BASKET": "raw"
     }
 }
