@@ -177,8 +177,8 @@ module.exports = function SellAnglerTokens(mod) {
 					enabled=false;
 					return;
 				}
-				SellerNpc=s;
-				TokenNpc=t;
+				SellerNpc=Object.create(s);
+				TokenNpc=Object.create(t);
 				scrolls=null;
 				mod.send('C_NPC_CONTACT', 2, {
 					gameId: TokenNpc.gameId
