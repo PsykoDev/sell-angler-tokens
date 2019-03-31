@@ -93,7 +93,7 @@ module.exports = function SellAnglerTokens(mod) {
 			t = event;
 		}
 	});
-	mod.hook('S_INVEN', 17, event => {
+	mod.hook('S_INVEN', mod.majorPatchVersion >= 80 ? 18 : 17, event => {
 		if (event.items.length == 0) return;
 		event.items.forEach(function (obj) {
 			if (obj.id == 204200) {
@@ -139,7 +139,7 @@ module.exports = function SellAnglerTokens(mod) {
 			setTimeout(() => {
 				mod.send('C_STORE_COMMIT', 1, {
 					gameId: mod.game.me.gameId,
-					npc: SellerNpc.contractId
+					contract: SellerNpc.contractId
 				});
 			}, delay);
 			
